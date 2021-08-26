@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja" class="has-navbar-fixed-top">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sandbox01</title>
+    <script type="module" src="/main.js" defer></script>
+    <script type="module" src="./script.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <nav class="navbar is-primary is-fixed-top has-shadow">
+        
+        <div class="navbar-brand">
+          <!-- ml-0 で左側に移動させる-->
+          <a id="navbar-burger" role="button" class="navbar-burger is-always ml-0" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div class="navbar-menu">
+          <div class="navbar-start"></div>
+          <div class="navbar-end"></div>
+        </div>
+      </nav>
+
+      <aside class="appSideMenu menu">
+        <p class="menu-label">
+          General
+          <ul class="menu-list">
+            <li><a class="is-active">Dashboard</a></li>
+            <li><a>Customers</a></li>
+          </ul>
+        </p>
+      </aside>
+
+      navbarやsidebarをだしてみる
+    </div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+$primary: hsl(246, 89%, 43%) !default;
+$card-header-background-color: $primary;
+$card-header-color: white;
+@import "../node_modules/bulma/bulma.sass";
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+html {
+  overflow-y: auto;
+}

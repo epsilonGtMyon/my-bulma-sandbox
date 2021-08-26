@@ -1,0 +1,21 @@
+
+$hoge-colors: $colors !default;
+
+
+//------------------
+//hoge というコンポーネントを作っ束愛
+.hoge {
+  //hogeの設定
+
+
+  
+  //カラーテーマの適用
+  @each $name, $pair in $hoge-colors {
+    $color: nth($pair, 1);
+    $color-invert: nth($pair, 2);
+    &.is-#{$name} {
+      background-color: $color;
+      color: $color-invert;
+    }
+  }
+}

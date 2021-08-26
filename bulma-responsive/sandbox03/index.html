@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sandbox01</title>
+    <script type="module" src="/main.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+
+      card+入力
+
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">Card header</p>
+          <button class="card-header-icon" aria-label="more options">
+            <span class="icon">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </header>
+        <div class="card-content">
+          <div class="columns is-multiline">
+            <div class="column is-6">
+              <div class="field">
+                <label class="label">名前</label>
+                <div class="control">
+                  <input class="input" type="text" value="名前" />
+                </div>
+                <p class="help is-danger"></p>
+              </div>
+            </div>
+
+            <div class="column is-6">
+              <div class="field">
+                <label class="label">住所</label>
+                <div class="control">
+                  <input class="input" type="text" value="住所" />
+                </div>
+                <p class="help is-danger"></p>
+              </div>
+            </div>
+
+            <div class="column is-6">
+              <div class="field">
+                <label class="label">血液型</label>
+                <div class="control">
+                  <div class="select">
+                    <select>
+                      <option>A型</option>
+                      <option>B型</option>
+                      <option>O型</option>
+                      <option>AB型</option>
+                    </select>
+                  </div>
+                </div>
+                <p class="help is-danger"></p>
+              </div>
+            </div>
+            
+            <div class="column is-12">
+              <button class="button is-primary">登録</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

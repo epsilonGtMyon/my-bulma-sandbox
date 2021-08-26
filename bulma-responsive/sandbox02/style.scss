@@ -1,0 +1,22 @@
+.navbar-burger.is-always {
+  //幅が広いと消させるので 打消し
+  display: block !important;
+  cursor: pointer;
+}
+
+.appSideMenu {
+  position: fixed;
+  top: 3.25rem;
+  left: 0;
+  bottom: 0;
+  z-index: 30;
+  background-color: white;
+  transform: translateX(-100%);
+  transition: transform 0.1s linear;
+
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+
+  &.is-shown {
+    transform: translateX(0);
+  }
+}
